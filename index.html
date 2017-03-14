@@ -1,79 +1,278 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>AMAN KUMAR</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
-     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato|Arvo|Anivers|Tangerine|Josefin Slab|Abril Fatface|Ubuntu|Droid Sans|Vollkorn|Lobster|Indie Flower|Shadows Into Light|Chewy|Pacifico|Gloria Hallelujah|Dancing Script|Berkshire Swash|Pinyon Script|Special Elite|Niconne">
-	<link rel="icon" type="image/x-icon" href="images/favicon.png">
-  </head>
-  <body style="background-color: #222222;">
-  <div style="height:650px; width:100%; background-color: #222222;">
-      <!-- Head
-      <div style="box-shadow:0px 5px 5px #00aadd; height:80px; width:100%; opacity:0.9; float:left; background-color: #222222; margin-bottom:20px">
-      <div style="height:80px; font-family:Josefin Slab; font-size:20px; margin-left:20px; margin-top:0px; color:#00aadd;"><br>
+<html lang="en">
+<head>
+<title>Aman Kumar</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/kwicks-slider.css" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<script src="js/jquery.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.kwicks-1.5.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script>
+if ($(window).width() > 1024) {
+    document.write("<" + "script src='js/jquery.preloader.js'></" + "script>");
+}
+</script>
+<script>
+jQuery(window).load(function () {
+    $x = $(window).width();
+    if ($x > 1024) {
+        jQuery("#content .row").preloader();
+    }
+    jQuery('.magnifier').touchTouch();
+    jQuery('.spinner').animate({
+        'opacity': 0
+    }, 1000, 'easeOutCubic', function () {
+        jQuery(this).css('display', 'none')
+    });
+});
+</script>
+<!--[if lt IE 8]>
+<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="css/docs.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+<![endif]-->
+</head>
+<body>
+<div class="spinner"></div>
+<!-- header start -->
+<header>
+  <div class="container clearfix">
+    <div class="row">
+      <div class="span12">
+        <div class="navbar navbar_">
+          <div class="container">
+            <h1 class="brand brand_"><a href="index.html"><img alt="" src="img/logo.png"></a></h1>
+  <!--          <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>-->
+            <div class="nav-collapse nav-collapse_  collapse">
+              <ul class="nav sf-menu">
+ <!--
+                <li class="active"><a href="index.html">Home</a></li>
+ 		<li><a href="work.html">Work</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="sub-menu"><a href="process.html">Process</a>
+                  <ul>
+                    <li><a href="#">Process 01</a></li>
+                    <li><a href="#">Process 02</a></li>
+                    <li><a href="#">Process 03</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+-->
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-      -->
-
-      <!-- Intro Box-->
-      <div style="box-shadow:0px 5px 5px #00aadd; height:640px; width:70%; opacity:0.9; float:left; background-color: #111111">
-      <div style="height:100px; width:85%;float:left; font-family:Josefin Slab; font-size:20px; margin-left:20px; margin-top:0px; color:#00aadd;"><br>
-      <i style="font-weight:bold; font-size:18px;">"Software is a great combination between artistry and engineering"</i> - Bill Gates.<br><br>
-      Hello World..!!<br>
-      My name is Aman and I write system softwares to make my living.
-      <br>
-      </div>
-	<div style="height:100px;width:15%; float:right;margin-top:-80px;"><img class="circular" src="images/dp.jpg"></img></div>
-      <div style="height:540px; font-family:Josefin Slab; float:left;font-size:20px; margin-left:20px; margin-top:0px; color:#00aadd;"><br>
-      If someone says that software is really about helping people by using computer technology, then I can say it would have changed my outlook a lot earlier. By choosing such a career has opened a whole new world for me to learn and explore. This has provided me opportunities to work on several linux device driver development, user space drivers, driver for USB-C physical layer chips, etc in linux environment. I also have been working on L1-L4 layers of networking and have been involved in the development of softwares for switches, routers, etc like devices. Networking projects have given me chance to learn low-level programming considering performance as primary thing. I'm a strong believer in open source technology and have worked on several open source platforms such as <a href="https://www.chromium.org/chromium-os/ec-development" target="_blank">Chrome EC projects</a><!--<a href="https://chromium.googlesource.com/chromiumos/platform/ec/+/e9501105c29100769151c75dbb3d037c5f133921%5E!/" target="_blank">(my Patch to project)</a>-->, open source networking stacks like <a href="http://www.opendataplane.org" target="_blank">ODP</a>, <a href="http://dpdk.org" target="_blank">DPDK</a>.<br>
-I love reading and knowing more about <a href="https://github.com/torvalds/linux" target="_blank">Linux kernel</a> and currently I'm learning <a href="https://en.wikipedia.org/wiki/USB" target="_blank">USB technology</a>. I believe I'm having a good understanding of computer language 'C' and I use it as my primary language to write softwares. But based on the need, I also use C++, HTML/CSS to write my codes.<br><br>
-     I also enjoy writing media and socket applications for fun and learning. Checkout some of my projects on github, listed in the right column.<br><br>
-     In my free time I read physics, scientific novels, science-fiction stories/comics and play video games. I always love to discuss about science, technology and Spiritual things. Contact me if you find I can be any help to you or you have something to share with me.
-     <br>
-     <br>
-     Thanks..!! <b style="color:#ffff00">☻ </b>
-      </div>
-      </div>
-
-      <!-- Project Box-->
-      <div style="box-shadow:0px 5px 5px #00aadd; height:360px; width:28%; opacity:0.9; float:right; background-color: #111111">
-      <div style="height:360px; font-family:Josefin Slab; font-size:20px; margin-left:20px; margin-top:0px; color:#00aadd;"><br>
-      /**<br>
-	&ensp;* @ Some Fun Projects :<br>
-	&ensp;*/<br>
-      enum github_projects {<br>
-	      &ensp;&ensp;&ensp;<a href="http://amankumar.net.in/simple_video_server" target="_blank">video_server</a>,<br>
-	      &ensp;&ensp;&ensp;<a href="http://amankumar.net.in/raw_video_player" target="_blank">raw_video_player</a>,<br>
-	      &ensp;&ensp;&ensp;<a href="http://amankumar.net.in/games" target="_blank">games</a>,<br>
-	      &ensp;&ensp;&ensp;<a href="http://amankumar.net.in/paint_brush" target="_blank">paint_brush</a>,<br>
-	      &ensp;&ensp;&ensp;<a href="http://amankumar.net.in/ebook-self" target="_blank">ebook-self</a>,<br>
-	      &ensp;&ensp;&ensp;<a href="#">event_control</a>,<br>
-	      &ensp;&ensp;&ensp;<a href="">lock-screen</a>,<br>
-	};<br>
-	</div>
-	</div>
-
-      <!-- Contact Box -->
-      <div style="box-shadow:0px 5px 5px #00aadd; height:260px; width:28%; opacity:0.9; margin-top:20px; float:right; background-color: #111111">
-      <div style="height:220px; font-family:Josefin Slab; font-size:20px; margin-left:20px; margin-top:0px; color:#00aadd;"><br>
-      /**<br>
-	&ensp;* @ Contact Details :<br>
-	&ensp;*/<br>
-      const struct contact {<br>
-	      &ensp;&ensp;&ensp;.name = "AMAN KUMAR",<br>
-	      &ensp;&ensp;&ensp;.email = "aman2467@gmail.com",<br>
-	};<br>
-	</div>
-      <div style="height:40px; font-family:Josefin Slab; font-size:20px; margin-left:20px; margin-top:0px; color:#00aadd;">
-      </div>
-      </div>
+    </div>
   </div>
+</header>
+<div class="bg-content">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <!-- slider -->
+        <div class="flexslider">
+          <ul class="slides">
+            <li> <img src="img/slide-1.jpg" alt=""> </li>
+            <li> <img src="img/slide-2.jpg" alt=""> </li>
+            <li> <img src="img/slide-3.jpg" alt=""> </li>
+            <li> <img src="img/slide-4.jpg" alt=""> </li>
+            <li> <img src="img/slide-5.jpg" alt=""> </li>
+          </ul>
+        </div>
+        <span id="responsiveFlag"></span>
+        <div class="block-slogan">
+          <h2>Namaskar..!!</h2>
+          <div>
+            <p>My name is <b>Aman Kumar</b> and I write system softwares to make my living. If someone says that software is really about helping people by using computer technology, then I can say it would have changed my outlook a lot earlier.<br>
+	    By choosing such a career has opened a whole new world for me to learn and explore.</p>
+<!--            <p style="text-align:center; padding-top:20px;"><a href="#" class="btn btn-1">Download Bootstrap</a></p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content -->
   <!--
-  <div style="height:80px; background-color: #333333; margin-top:20px;">
+  <div id="content" class="content-extra">
+    <div class="ic"></div>
+    <div class="row-1">
+      <div class="container">
+        <div class="row">
+          <article class="span12">
+            <h4>Our Work</h4>
+          </article>
+          <div class="clear"></div>
+          <ul class="portfolio clearfix">
+            <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/1.jpg"></a></li>
+            <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/2.jpg"></a></li>
+            <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/3.jpg"></a></li>
+            <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/4.jpg"></a></li>
+            <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/5.jpg"></a></li>
+            <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/6.jpg"></a></li>
+            <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/7.jpg"></a></li>
+            <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/8.jpg"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row-2">
+      <div class="container">
+        <h3>Completly Customizable and Responsive</h3>
+        <h3>Easy to Use. Totally Free to Download. Made with love!</h3>
+        <p>The complete template is created using the Bootstrap framework, which is highly customizable with lots of options.</p>
+        <a href="#" class="btn btn-1">Download</a> </div>
+    </div>
+    <div class="row-1">
+      <div class="container">
+        <div class="row">
+          <article class="span12">
+            <h4>From blog</h4>
+          </article>
+          <ul class="thumbnails thumbnails-1">
+            <li class="span3">
+              <div class="thumbnail thumbnail-1">
+                <h3>Web Design</h3>
+                <img  src="img/blog-featured-01.jpg" alt="">
+                <section> <a href="#">
+                  <h3>At vero eos et accusamus et iusto </h3>
+                  </a>
+                  <div class="meta">
+                    <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
+                    <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
+                    <a href="#" class="comments"><i class="icon-comment"></i> 7 comments</a> </div>
+                  <div class="clear"></div>
+                  <p>Vivamus sollicitudin libero auctor arcu pulvinar commodo.</p>
+                  <a href="#" class="btn btn-1">Read More</a> </section>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="thumbnail thumbnail-1">
+                <h3>Graphics</h3>
+                <img  src="img/blog-featured-02.jpg" alt="">
+                <section> <a href="#">
+                  <h3>Deleniti atque corrupti quos</h3>
+                  </a>
+                  <div class="meta">
+                    <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
+                    <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
+                    <a href="#" class="comments"><i class="icon-comment"></i> 4 comments</a> </div>
+                  <div class="clear"></div>
+                  <p>Vestibulum volutpat urna sed sapien vehicula varius.</p>
+                  <a href="#" class="btn btn-1">Read More</a> </section>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="thumbnail thumbnail-1">
+                <h3>Social Media</h3>
+                <img  src="img/blog-featured-03.jpg" alt="">
+                <section> <a href="#">
+                  <h3>Similique sunt in culpa qui officia</h3>
+                  </a>
+                  <div class="meta">
+                    <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
+                    <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
+                    <a href="#" class="comments"><i class="icon-comment"></i> 9 comments</a> </div>
+                  <div class="clear"></div>
+                  <p>Pellentesque mi justo, laoreet non bibendum non, auctor imperdiet eros.</p>
+                  <a href="#" class="btn btn-1">Read More</a> </section>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="thumbnail thumbnail-1">
+                <h3 class="title-1 extra">Photography</h3>
+                <img  src="img/blog-featured-04.jpg" alt="">
+                <section> <a href="#">
+                  <h3>Similique sunt in culpa qui officia</h3>
+                  </a>
+                  <div class="meta">
+                    <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
+                    <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
+                    <a href="#" class="comments"><i class="icon-comment"></i> 1 comment</a> </div>
+                  <div class="clear"></div>
+                  <p>Vestibulum volutpat urna sed sapien vehicula varius.</p>
+                  <a href="#" class="btn btn-1">Read More</a> </section>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <article class="span6">
+          <h3>Shortly about us</h3>
+          <div class="wrapper">
+            <figure class="img-indent"><img src="img/15.jpg " alt=""></figure>
+            <div class="inner-1 overflow extra">
+              <div class="txt-1">Mauris scelerisque odio quis leo viverra ac porttitor sem blandit. Sed tincidunt mattis varius. Nunc sodales ipsum nisl, eget lacinia nibh.</div>
+              Cras lacus tortor, tempus vitae porta nec, hendrerit id dolor. Nam volutpat gravida porta. Suspendisse turpis nibh, volutpat. </div>
+          </div>
+        </article>
+        <article class="span6">
+          <h3>Some quick links</h3>
+          <div class="wrapper">
+            <ul class="list list-pad">
+              <li><a href="#">Campaigns</a></li>
+              <li><a href="#">Portraits</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Fine Art</a></li>
+            </ul>
+            <ul class="list list-pad">
+              <li><a href="#">Campaigns</a></li>
+              <li><a href="#">Portraits</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Fine Art</a></li>
+            </ul>
+            <ul class="list list-pad">
+              <li><a href="#">Campaigns</a></li>
+              <li><a href="#">Portraits</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Fine Art</a></li>
+            </ul>
+            <ul class="list">
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Love story</a></li>
+              <li><a href="#">Landscapes</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<!-- footer -->
+<footer>
+<!--
+  <div class="container clearfix">
+    <ul class="list-social pull-right">
+      <li><a class="icon-1" href="#"></a></li>
+      <li><a class="icon-2" href="#"></a></li>
+      <li><a class="icon-3" href="#"></a></li>
+      <li><a class="icon-4" href="#"></a></li>
+    </ul>
+    <div class="privacy pull-left">&copy; 2013 | <a href="http://www.dzyngiri.com">Dzyngiri</a> | Demo Illustrations by <a href="http://justinmezzell.com">Justin Mezzell</a></div>
   </div>
   -->
-  </body>
+</footer>
+<script src="js/bootstrap.js"></script>
+</body>
 </html>
